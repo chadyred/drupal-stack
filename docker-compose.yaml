@@ -13,7 +13,7 @@ services:
       - nginx-proxy
 
   php-fpm:
-    image: php:7.3-fpm
+    build: ./docker/php-fpm
     environment:
       DB_HOST: test
       DB_USER: test

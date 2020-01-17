@@ -1,19 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6791df38-9e1d-4707-a519-0de2fa2411e3" name="Default Changelist" comment="" />
+    <list default="true" id="6791df38-9e1d-4707-a519-0de2fa2411e3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/php-fpm/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/drupal-stack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/drupal-stack.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/pear/archive_tar" />
+      <path value="$PROJECT_DIR$/vendor/pear/console_getopt" />
+      <path value="$PROJECT_DIR$/vendor/pear/pear-core-minimal" />
+      <path value="$PROJECT_DIR$/vendor/pear/pear_exception" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/stack/builder" />
+      <path value="$PROJECT_DIR$/vendor/typo3/phar-stream-wrapper" />
+      <path value="$PROJECT_DIR$/vendor/drupal/core-composer-scaffold" />
+      <path value="$PROJECT_DIR$/vendor/drupal/core-project-message" />
+      <path value="$PROJECT_DIR$/vendor/drupal/core-vendor-hardening" />
+      <path value="$PROJECT_DIR$/vendor/easyrdf/easyrdf" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/class-loader" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/masterminds/html5" />
+      <path value="$PROJECT_DIR$/vendor/symfony-cmf/routing" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-diactoros" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-escaper" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-feed" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-stdlib" />
+    </include_path>
   </component>
   <component name="ProjectId" id="1WW4TiFAQnd9SlMRJyoektd6OA8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -24,6 +89,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -75,7 +141,8 @@
       <option name="presentableId" value="Default" />
       <updated>1579252026305</updated>
       <workItem from="1579252027867" duration="2837000" />
-      <workItem from="1579257144950" duration="9510000" />
+      <workItem from="1579257144950" duration="10364000" />
+      <workItem from="1579276669010" duration="796000" />
     </task>
     <servers />
   </component>
@@ -83,17 +150,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2615" y="-41" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579273473231">
+    <state x="2615" y="-41" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579276726819">
       <screen x="1920" y="-372" width="1920" height="1040" />
     </state>
-    <state x="2615" y="-41" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.-372.1920.1040/-1920.-375.1920.1040@1920.-372.1920.1040" timestamp="1579273473231" />
+    <state x="2615" y="-41" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.-372.1920.1040/-1920.-375.1920.1040@1920.-372.1920.1040" timestamp="1579276726819" />
     <state x="2606" y="-124" key="#docker-compose.yaml.nginx:_Compose_Deployment" timestamp="1579267517853">
       <screen x="1920" y="-372" width="1920" height="1040" />
     </state>
     <state x="2606" y="-124" key="#docker-compose.yaml.nginx:_Compose_Deployment/0.0.1280.680/1920.-372.1920.1040/-1920.-375.1920.1040@1920.-372.1920.1040" timestamp="1579267517853" />
-    <state x="2588" y="-23" key="com.intellij.ide.util.TipDialog" timestamp="1579257165014">
+    <state x="2588" y="-23" key="com.intellij.ide.util.TipDialog" timestamp="1579276711559">
       <screen x="1920" y="-372" width="1920" height="1040" />
     </state>
-    <state x="2588" y="-23" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.-372.1920.1040/-1920.-375.1920.1040@1920.-372.1920.1040" timestamp="1579257165014" />
+    <state x="2588" y="-23" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.-372.1920.1040/-1920.-375.1920.1040@1920.-372.1920.1040" timestamp="1579276711559" />
   </component>
 </project>
