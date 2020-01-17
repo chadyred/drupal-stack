@@ -15,7 +15,6 @@ services:
   php-fpm:
     image: php:7.3-fpm
     environment:
-      #      PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S opensmtpd:25
       DB_HOST: test
       DB_USER: test
       DB_PASSWORD: test
@@ -59,6 +58,6 @@ services:
       - nginx-proxy
 
 networks:
-  nginx-proxy: # Nom du réseau externe créé à la .
+  nginx-proxy:
     external:
       name: proxy-nginx

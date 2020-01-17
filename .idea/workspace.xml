@@ -27,6 +27,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\fcellier\www\drupal-stack" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="docker-compose.yaml.nginx: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
@@ -70,7 +75,7 @@
       <option name="presentableId" value="Default" />
       <updated>1579252026305</updated>
       <workItem from="1579252027867" duration="2837000" />
-      <workItem from="1579257144950" duration="8442000" />
+      <workItem from="1579257144950" duration="9510000" />
     </task>
     <servers />
   </component>
