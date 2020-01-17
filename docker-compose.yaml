@@ -1,0 +1,64 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:8.0.19
+    stop_grace_period: 30s
+    environment:
+      MYSQL_ROOT_PASSWORD: test
+      MYSQL_DATABASE: test
+      MYSQL_USER: test
+      MYSQL_PASSWORD: test
+    networks:
+      - default
+      - nginx-proxy
+
+  php-fpm:
+    image: php:7.3-fpm
+    environment:
+      #      PHP_SENDMAIL_PATH: /usr/sbin/sendmail -t -i -S opensmtpd:25
+      DB_HOST: test
+      DB_USER: test
+      DB_PASSWORD: test
+      DB_NAME: test
+      DB_DRIVER: mysql
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - default
+      - nginx-proxy
+
+  nginx:
+    image: nginx:latest
+    working_dir: /var/www/html
+    volumes:
+      - ./:/var/www/html
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:rw
+    depends_on:
+      - php-fpm
+    environment:
+      VIRTUAL_HOST: test.localhost
+    networks:
+      - default
+      - nginx-proxy
+
+  reverseproxy:
+    image: jwilder/nginx-proxy:latest
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock
+      - ./reverseproxy/config/conf.d:/etc/nginx/conf.d
+      - ./reverseproxy/config/vhost.d:/etc/nginx/vhost.d
+      - ./reverseproxy/config/certs:/etc/nginx/certs
+      - ./reverseproxy/config/htpasswd:/etc/nginx/htpasswd
+      - ./reverseproxy/log/nginx:/var/log/nginx
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - default
+      - nginx-proxy
+
+networks:
+  nginx-proxy: # Nom du réseau externe créé à la .
+    external:
+      name: proxy-nginx
