@@ -15,11 +15,13 @@ services:
       - nginx-proxy
 
   composer:
-    user: ${USER_ID}
-    image: composer
+    build: ./docker/php-fpm
+    working_dir: /app
+    environment:
+      COMPOSER_HOME: /tmp
     volumes:
-      - ${COMPOSER_CACHE_DIRECTORY}:/tmp
-      - ${APP_DIR}:/app
+      - /home/fcellier/.composer:/tmp:rw
+      - ./:/app
 
   php-fpm:
     user: ${USER_ID}
