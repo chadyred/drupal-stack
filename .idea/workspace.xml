@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6791df38-9e1d-4707-a519-0de2fa2411e3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/php-fpm/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/drupal-stack.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/drupal-stack.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -143,6 +139,7 @@
       <workItem from="1579252027867" duration="2837000" />
       <workItem from="1579257144950" duration="10364000" />
       <workItem from="1579276669010" duration="796000" />
+      <workItem from="1579510366430" duration="9526000" />
     </task>
     <servers />
   </component>
@@ -150,17 +147,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2615" y="-41" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579276726819">
+    <state x="2615" y="-41" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1579528244251">
       <screen x="1920" y="-372" width="1920" height="1040" />
     </state>
-    <state x="2615" y="-41" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.-372.1920.1040/-1920.-375.1920.1040@1920.-372.1920.1040" timestamp="1579276726819" />
+    <state x="2615" y="-41" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680/1920.-372.1920.1040/-1920.-375.1920.1040@1920.-372.1920.1040" timestamp="1579528244251" />
     <state x="2606" y="-124" key="#docker-compose.yaml.nginx:_Compose_Deployment" timestamp="1579267517853">
       <screen x="1920" y="-372" width="1920" height="1040" />
     </state>
     <state x="2606" y="-124" key="#docker-compose.yaml.nginx:_Compose_Deployment/0.0.1280.680/1920.-372.1920.1040/-1920.-375.1920.1040@1920.-372.1920.1040" timestamp="1579267517853" />
-    <state x="2588" y="-23" key="com.intellij.ide.util.TipDialog" timestamp="1579276711559">
+    <state x="2588" y="-23" key="com.intellij.ide.util.TipDialog" timestamp="1579510371758">
       <screen x="1920" y="-372" width="1920" height="1040" />
     </state>
-    <state x="2588" y="-23" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.-372.1920.1040/-1920.-375.1920.1040@1920.-372.1920.1040" timestamp="1579276711559" />
+    <state x="2588" y="-23" key="com.intellij.ide.util.TipDialog/0.0.1280.680/1920.-372.1920.1040/-1920.-375.1920.1040@1920.-372.1920.1040" timestamp="1579510371758" />
   </component>
 </project>

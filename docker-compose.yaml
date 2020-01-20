@@ -1,18 +1,28 @@
 version: "3"
 services:
-  mysql:
-    image: mysql:8.0.19
+  database:
+    image: mysql:5.7
     stop_grace_period: 30s
     environment:
       MYSQL_ROOT_PASSWORD: test
       MYSQL_DATABASE: test
       MYSQL_USER: test
       MYSQL_PASSWORD: test
+    volumes:
+      - db:/var/lib/mysql
     networks:
       - default
       - nginx-proxy
 
+  composer:
+    user: ${USER_ID}
+    image: composer
+    volumes:
+      - ${COMPOSER_CACHE_DIRECTORY}:/tmp
+      - ${APP_DIR}:/app
+
   php-fpm:
+    user: ${USER_ID}
     build: ./docker/php-fpm
     environment:
       DB_HOST: test
@@ -61,3 +71,6 @@ networks:
   nginx-proxy:
     external:
       name: proxy-nginx
+
+volumes:
+  db:

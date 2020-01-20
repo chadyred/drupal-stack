@@ -1,3 +1,7 @@
+INSTALLATION
+------------
+
+* [01 - Install](doc/01-install.md)
 
 CONTENTS OF THIS FILE
 ---------------------
